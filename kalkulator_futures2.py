@@ -21,7 +21,7 @@ def futures_pnl_calculator(entry_price, target_price, stoploss_price, margin, le
     }
 
 # UI Streamlit
-st.title("💹 Kalkulator Profit/Loss Futures Crypto")
+st.title("💹 Kalkulator PnL")
 
 entry = st.number_input("📍 Entry Price", value=0.01, step=0.0001)
 tp = st.number_input("🎯 Target Price (TP)", value=0.02, step=0.0001)
