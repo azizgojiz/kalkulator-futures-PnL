@@ -23,9 +23,9 @@ def futures_pnl_calculator(entry_price, target_price, stoploss_price, margin, le
 # UI Streamlit
 st.title("💹 Kalkulator PnL")
 
-entry = st.number_input("📍 Entry Price", value=0.01, step=0.0001)
-tp = st.number_input("🎯 Target Price (TP)", value=0.02, step=0.0001)
-sl = st.number_input("🛑 Stop Loss (SL)", value=0.009, step=0.0001)
+entry = st.number_input("📍 Entry Price", value=0.01, step=0.0001, format="%.10f")
+tp = st.number_input("🎯 Target Price (TP)", value=0.02, step=0.0001,  format="%.10f")
+sl = st.number_input("🛑 Stop Loss (SL)", value=0.009, step=0.0001,  format="%.10f")
 margin = st.number_input("💰 Margin (USDT)", value=10.0, step=1.0)
 leverage = st.number_input("📈 Leverage (X)", value=10.0, step=1.0)
 position = st.selectbox("📊 Jenis Posisi", ['long', 'short'])
